@@ -1,44 +1,38 @@
-import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import { Container } from "reactstrap";
-
-import PrivateRoute from "./components/PrivateRoute";
-import Loading from "./components/Loading";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Home from "./views/Home";
-import Profile from "./views/Profile";
+import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useAuth0 } from "./react-auth0-spa";
-import history from "./utils/history";
+import Profile from "./components/Profile";
+import PrivateRoute from "./components/PrivateRoute";
+import NavBar from "./components/NavBar";
 
-// styles
-import "./App.css";
+import './App.css';
 
-// fontawesome
-import initFontAwesome from "./utils/initFontAwesome";
-initFontAwesome();
-
-const App = () => {
+function App() {
   const { loading } = useAuth0();
 
   if (loading) {
-    return <Loading />;
+    return (
+      <div>Loading...</div>
+    );
   }
-
   return (
-    <Router history={history}>
-      <div id="app" className="d-flex flex-column h-100">
+    <div className="App">
+
+      {/* New - use BrowserRouter to provide access to /profile */}
+      <BrowserRouter>
         <NavBar />
-        <Container className="flex-grow-1 mt-5">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <PrivateRoute path="/profile" component={Profile} />
-          </Switch>
-        </Container>
-        <Footer />
-      </div>
-    </Router>
+        <header>
+          <h1 style={{textAlign: 'center'}}>Login Template</h1>
+          <h2 style={{textAlign: 'center'}}>Using React Hooks + SWR + Auth0</h2>
+        </header>
+
+        <Switch>
+          <Route path="/" exact />
+          <PrivateRoute path="/profile" component={Profile} />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
-};
+}
 
 export default App;
