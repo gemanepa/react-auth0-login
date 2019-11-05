@@ -1,0 +1,12 @@
+section.cuteanimal {
+    height: auto;
+}
+section.cuteanimal h3, section.cuteanimal h4 {
+    text-align: center
+}
+
+section.cuteanimal img {
+    width: auto;
+    height: 50vh;
+    border-radius: 5%;
+}

@@ -1,0 +1,25 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    width: 45vw;
+    height: auto;
+    font-size: 150%;
+    padding: 0.75%;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    color:black;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 1%;
+  }
+  
+  .btn:hover {
+    filter: invert(100%);
+  }
+  

@@ -1,0 +1,15 @@
+
+.profile-pic {
+    border-radius: 5%;
+    max-width: 325px;
+    height: auto;
+}
+.profile-data {
+    text-align: left;
+    margin-left: 30%;
+    
+}
+
+.profile-data h4 span {
+    font-weight: 300;
+}

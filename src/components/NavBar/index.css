@@ -1,0 +1,73 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a {
+    width: auto;
+    height: auto;
+    animation: flipInX 1.5s forwards;
+}
+
+nav a img {
+    width: 150px;
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+}
+
+nav button {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 0px;
+    color: darkred;
+    font-size: 120%;
+    cursor: pointer
+}
+
+nav button:hover {
+    color: darkblue;
+}
+
+nav span button {
+    margin-left: 1.5vw;
+}
+
+nav span a {
+    margin-left: 1.5vw;
+    color: darkgreen;
+}
+
+nav span a:visited {
+    color: darkgreen;
+}
+
+@keyframes flipInX {
+    from {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+    }
+  }
