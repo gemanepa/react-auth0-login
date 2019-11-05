@@ -1,6 +1,6 @@
 {
   "short_name": "gemanepa React+Auth0 Login",
-  "name": "Login application created by gemanepa.com using create-react-app and Auth0",
+  "name": "Login application created by gemanepa.com using create-react-app, swr, and auth0",
   "icons": [
     {
       "src": "favicon.ico",

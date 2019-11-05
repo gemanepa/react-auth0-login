@@ -1,5 +1,4 @@
 # Login Template (React Hooks + SWR + Auth0)
-[WORK IN PROGRESS]
 Login application created using SWR, Auth0 & Create-React-App, 
 
 ## Available Scripts
