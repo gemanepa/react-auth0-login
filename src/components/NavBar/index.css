@@ -2,7 +2,7 @@
 nav {
     display: flex;
     flex-direction: row;
-    width: 98%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -46,6 +46,9 @@ nav span a:visited {
 }
 
 @media screen and (max-width: 1200px) {
+  nav {
+    width: 98%;
+  }
   nav a img {
     width: 85px;
     position: relative;
