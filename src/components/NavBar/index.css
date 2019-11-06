@@ -2,7 +2,7 @@
 nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 98%;
     justify-content: space-between;
 }
 
@@ -43,6 +43,13 @@ nav span a {
 
 nav span a:visited {
     color: darkgreen;
+}
+
+@media screen and (max-width: 1200px) {
+  nav a img {
+    width: 85px;
+    position: relative;
+  }
 }
 
 @keyframes flipInX {

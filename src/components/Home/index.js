@@ -39,7 +39,7 @@ export default function Home() {
                     }
                     className="btn"
                 >
-            Log in or Sign up for the kitties ( ͡° ͜ʖ ͡°)
+            Log in or Sign up for the kitties<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span>
           </button>
           </div>
           {checkcodeButton}

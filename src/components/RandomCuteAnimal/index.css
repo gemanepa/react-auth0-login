@@ -10,3 +10,15 @@ section.cuteanimal img {
     height: 50vh;
     border-radius: 5%;
 }
+
+@media screen and (max-width: 1200px) {
+    section.cuteanimal {
+        max-width: 100vw;
+    }
+
+    section.cuteanimal img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+}
