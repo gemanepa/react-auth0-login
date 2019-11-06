@@ -7,9 +7,15 @@
 .profile-data {
     text-align: left;
     margin-left: 30%;
-    
 }
 
 .profile-data h4 span {
     font-weight: 300;
 }
+
+@media screen and (max-width: 1200px) {
+    .profile-data {
+        text-align: left;
+        margin-left: 5%;
+    }
+  }

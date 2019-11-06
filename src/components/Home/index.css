@@ -23,3 +23,11 @@
     filter: invert(100%);
   }
   
+  @media screen and (max-width: 1200px) {
+    .btn {
+      width: 98%;
+    }
+    .desktop-only {
+      display: none;
+    }
+}
