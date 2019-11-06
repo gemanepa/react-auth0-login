@@ -1,48 +1,48 @@
 
 nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 nav a {
-    width: auto;
-    height: auto;
-    animation: flipInX 1.5s forwards;
+  width: auto;
+  height: auto;
+  animation: flipInX 1.5s forwards;
 }
 
 nav a img {
-    width: 150px;
-    height: auto;
-    position: absolute;
+  width: 150px;
+  height: auto;
+  position: absolute;
 }
 
 nav button {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    border: 0px;
-    color: darkred;
-    font-size: 120%;
-    cursor: pointer
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: 0px;
+  color: darkred;
+  font-size: 120%;
+  cursor: pointer
 }
 
 nav button:hover {
-    color: darkblue;
+  color: darkblue;
 }
 
 nav span button {
-    margin-left: 1.5vw;
+  margin-left: 1.5vw;
 }
 
 nav span a {
-    margin-left: 1.5vw;
-    color: darkgreen;
+  margin-left: 1.5vw;
+  color: darkgreen;
 }
 
 nav span a:visited {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 @media screen and (max-width: 1200px) {

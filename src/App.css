@@ -55,6 +55,9 @@ header h2 span a, header h2 span a:visited {
   text-shadow: 1px 1px black;
   font-weight: 200;
 }
+header h2 span a:hover {
+  color: black;
+}
 
 @keyframes lightSpeedInRight {
   from {
