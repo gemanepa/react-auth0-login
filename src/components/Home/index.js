@@ -52,7 +52,9 @@ export default function Home() {
             :
             <RandomCuteAnimalMock />
             }
-            <button className="btn" onClick={() => logout()}>Logout for the doggos ( ͡° ͜ʖ ͡°)</button>
+            <div>
+                <button className="btn" onClick={() => logout()}>Logout for the doggos<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span></button>
+            </div>
             <Link to="/profile">
                 <button className="btn">Check your Profile</button>
             </Link>
