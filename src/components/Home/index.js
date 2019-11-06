@@ -14,7 +14,7 @@ const checkcodeButton = (
 function RandomCuteAnimalMock() {
     return (
         <section className="cuteanimal">
-            <h3>You are a mock, so here you have a random mock pic</h3>
+            <h3>You are a mock, so here you have a random mock pic from <a href='https://mock.com'>https://mock.com</a></h3>
             <img alt="" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.commondreams.org%2Fsites%2Fdefault%2Ffiles%2Fimce-images%2Fscreen_shot_2012-01-24_at_3.48.15_pm.png&f=1&nofb=1"/>
             <h4>Cute mock, right?</h4>
         </section>
@@ -32,17 +32,19 @@ export default function Home() {
             :
             <RandomCuteAnimalMock />
             }
-          <div>
-              <button
-                    onClick={() =>
-                    loginWithRedirect({})
-                    }
-                    className="btn"
-                >
-            Log in or Sign up for the kitties<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span>
-          </button>
+          <div className="flex-buttons">
+            <div>
+                <button
+                        onClick={() =>
+                        loginWithRedirect({})
+                        }
+                        className="btn"
+                    >
+                Log in or Sign up for the kitties<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span>
+            </button>
+            </div>
+            {checkcodeButton}
           </div>
-          {checkcodeButton}
         </div>)}
 
         {isAuthenticated && (
@@ -52,13 +54,15 @@ export default function Home() {
             :
             <RandomCuteAnimalMock />
             }
-            <div>
-                <button className="btn" onClick={() => logout()}>Logout for the doggos<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span></button>
+            <div className="flex-buttons">
+                <div>
+                    <button className="btn" onClick={() => logout()}>Logout for the doggos<span className="desktop-only"> ( ͡° ͜ʖ ͡°)</span></button>
+                </div>
+                <Link to="/profile">
+                    <button className="btn">Check your Profile</button>
+                </Link>
+                {checkcodeButton}
             </div>
-            <Link to="/profile">
-                <button className="btn">Check your Profile</button>
-            </Link>
-            {checkcodeButton}
         </div>
         )}
         </>
