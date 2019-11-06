@@ -9,7 +9,14 @@
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
+}
+
+.flex-buttons-notlogged {
   width: 70vw;
+}
+
+.flex-buttons-logged {
+  width: 90vw;
 }
 
 .btn {
@@ -36,6 +43,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    .flex-buttons-notlogged, .flex-buttons-logged  {
       width: 100%;
     }
 
