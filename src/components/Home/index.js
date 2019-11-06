@@ -39,7 +39,7 @@ export default function Home() {
                     }
                     className="btn"
                 >
-            Log in for the kitties ( ͡° ͜ʖ ͡°)
+            Log in or Sign up for the kitties ( ͡° ͜ʖ ͡°)
           </button>
           </div>
           {checkcodeButton}
@@ -52,7 +52,7 @@ export default function Home() {
             :
             <RandomCuteAnimalMock />
             }
-            <button className="btn" onClick={() => logout()}>Log out for the doggos ( ͡° ͜ʖ ͡°)</button>
+            <button className="btn" onClick={() => logout()}>Logout for the doggos ( ͡° ͜ʖ ͡°)</button>
             <Link to="/profile">
                 <button className="btn">Check your Profile</button>
             </Link>

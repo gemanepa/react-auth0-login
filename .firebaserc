@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "react-auth0-login"
+  }
+}
