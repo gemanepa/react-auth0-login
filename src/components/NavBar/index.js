@@ -17,7 +17,7 @@ const NavBar = (props) => {
             loginWithRedirect({})
           }
         >
-          Login
+          SIGNUP | LOGIN
         </button>
       )}
 
@@ -26,7 +26,7 @@ const NavBar = (props) => {
         <span>
             <Link to="/">Home</Link>&nbsp;
             <Link to="/profile">Profile</Link>
-            <button onClick={() => logout()}>Logout</button>
+            <button onClick={() => logout()}>LOGOUT</button>
         </span>
         )}
     </nav>
