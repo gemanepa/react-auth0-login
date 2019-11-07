@@ -23,7 +23,8 @@ nav button {
   height: auto;
   background-color: transparent;
   border: 0px;
-  color: darkred;
+  color: white;
+  font-weight: 600;
   font-size: 120%;
   cursor: pointer
 }
@@ -38,11 +39,11 @@ nav span button {
 
 nav span a {
   margin-left: 1.5vw;
-  color: darkgreen;
+  color: #FFFFFF;
 }
 
 nav span a:visited {
-  color: darkgreen;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +53,19 @@ nav span a:visited {
   nav a img {
     width: 85px;
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    height: 3.5vh;
+  }
+  nav a {
+    position: fixed;
+  }
+  nav button {
+    position: fixed;
+    right: 1%;
   }
 }
 

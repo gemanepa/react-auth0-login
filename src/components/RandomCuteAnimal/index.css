@@ -1,14 +1,22 @@
 section.cuteanimal {
     height: auto;
+    margin-top: 10%;
+    color: #FFFFFF;
 }
-section.cuteanimal h3, section.cuteanimal h4 {
-    text-align: center
+section.cuteanimal h3 {
+    text-align: center;
+    margin: auto;
+}
+section.cuteanimal a {
+    color: #FFFFFF;
 }
 
 section.cuteanimal img {
     width: auto;
-    height: 50vh;
+    height: 30vh;
     border-radius: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -22,3 +30,11 @@ section.cuteanimal img {
         border-radius: 5%;
     }
 }
+@media screen and (min-width: 1200px) {
+    section.cuteanimal h3{
+        width: 50%;
+    }
+}
+
+
+
