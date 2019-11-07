@@ -1,6 +1,9 @@
 
 # Login Template (React Hooks + SWR + Auth0)
-[React Hooks](https://reactjs.org/docs/hooks-intro.html) Login template that fetches with [SWR](https://swr.now.sh) a random dog pic from the [Dog Api](https://dog.ceo/dog-api/) if user is not currently logged through [Auth0](https://auth0.com), and a random cat pic from the [Cat Api](https://thecatapi.com/) if it is. When the user is logged through [Auth0](https://auth0.com) it also gains access to the Profile section
+![](https://i.imgur.com/kkFhd8z.jpg)
+[React Hooks](https://reactjs.org/docs/hooks-intro.html) Login template that fetches with [SWR](https://swr.now.sh) a random dog pic from the [Dog Api](https://dog.ceo/dog-api/) if user is not currently logged through [Auth0](https://auth0.com), and a random cat pic from the [Cat Api](https://thecatapi.com/) if it is. When the user is logged through [Auth0](https://auth0.com) it also gains access to the Profile section.
+
+Users can sign up and log in with the following social accounts: Google, Facebook, Twitter, LinkedIn, Amazon, Apple, Microsoft, PayPal, Dropbox, & Github
 
 Live Version hosted in [Firebase](https://firebase.google.com/): https://react-auth0-login.web.app
 
