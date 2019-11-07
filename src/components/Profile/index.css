@@ -4,7 +4,7 @@
     height: auto;
 }
 .profile-data {
-    text-align: center;
+    text-align: left;
     color: white;
     text-shadow: 1px 1px black;
     font-weight: 600;
@@ -26,6 +26,12 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .profile-section {
+        padding-left: 50%;
+    }
+    .profile-data {
+        padding-left: 25%;
+    }
     .profile-pic {
         max-width: 10vw;
     }
