@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../media/logo.png';
+import { useAuth0 } from "../../react-auth0-spa";
 import './index.css';
 
 const NavBar = (props) => {
-  const { isAuthenticated, loginWithRedirect, logout } = props.auth0;
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
   return (
     <nav>

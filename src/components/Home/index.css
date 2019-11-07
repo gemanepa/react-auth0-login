@@ -20,7 +20,7 @@
 }
 
 .btn {
-    width: 27vw;
+    width: 22vw;
     height: auto;
     font-size: 120%;
     padding: 0.75%;
@@ -31,6 +31,7 @@
     border-color: black;
     border-style: solid;
     border-width: 1px;
+    margin: auto;
     margin-bottom: 1%;
   }
   
@@ -38,7 +39,7 @@
     filter: invert(100%);
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     .flex-buttons {
       display: flex;
       flex-direction: column;
@@ -53,7 +54,10 @@
       width: 98%;
       font-size: 150%;
     }
-    .desktop-only {
-      display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .flex-column {
+      margin-left: 50%;
     }
   }
