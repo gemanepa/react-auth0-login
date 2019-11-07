@@ -14,7 +14,7 @@ const checkcodeButton = (
 function RandomCuteAnimalMock() {
     return (
         <section className="cuteanimal">
-            <h3>You are a mock, so here you have a random mock pic from <a href='https://mock.com'>https://mock.com</a></h3>
+            <h3>You are a mock, so here you have random mock pics from <a href='https://mock.com'>https://dog.ceo/dog-api/</a></h3>
             <img alt="" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.commondreams.org%2Fsites%2Fdefault%2Ffiles%2Fimce-images%2Fscreen_shot_2012-01-24_at_3.48.15_pm.png&f=1&nofb=1"/>
         </section>
     )
