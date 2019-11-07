@@ -5,12 +5,6 @@ import RandomCuteAnimal from '../RandomCuteAnimal';
 import { dog, cat } from '../../endpoints';
 import './index.css';
 
-const checkcodeButton = (
-    <a href="https://github.com/gemanepa/react-auth0-login">
-        <button className="btn">Check the Code</button>
-    </a>
-)
-
 function RandomCuteAnimalMock() {
     return (
         <section className="cuteanimal">
