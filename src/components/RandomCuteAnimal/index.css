@@ -7,7 +7,7 @@ section.cuteanimal h3 {
     text-align: center;
     margin: auto;
 }
-section.cuteanimal a {
+section.cuteanimal a, section.cuteanimal a:visited {
     color: #FFFFFF;
 }
 
@@ -32,7 +32,7 @@ section.cuteanimal img {
 }
 @media screen and (min-width: 1200px) {
     section.cuteanimal h3{
-        width: 50%;
+        width: 55%;
     }
 }
 
