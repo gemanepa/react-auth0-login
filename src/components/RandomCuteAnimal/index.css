@@ -1,6 +1,7 @@
 section.cuteanimal {
     height: auto;
     color: #FFFFFF;
+    text-shadow: 1px 1px black;
 }
 section.cuteanimal h3 {
     text-align: center;
@@ -8,6 +9,7 @@ section.cuteanimal h3 {
 }
 section.cuteanimal a, section.cuteanimal a:visited {
     color: #FFFFFF;
+    text-shadow: 1px 1px black;
 }
 
 section.cuteanimal img {
@@ -27,6 +29,8 @@ section.cuteanimal img {
         width: 100%;
         height: auto;
         border-radius: 5%;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 @media screen and (min-width: 1200px) {

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useAuth0 } from "../../react-auth0-spa";
 import Loader from '../Loader';
 import './index.css'
@@ -13,7 +13,7 @@ const Profile = () => {
   }
 
   return (
-    <Fragment>
+    <section className="profile-section">
       <img src={user.picture} className="profile-pic" alt="Profile" />
 
       <h2>{user.name}</h2>
@@ -27,7 +27,7 @@ const Profile = () => {
       </div>
 
       {/* <code>{JSON.stringify(user, null, 2)}</code> */}
-    </Fragment>
+    </section>
   );
 };
 

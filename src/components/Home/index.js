@@ -16,13 +16,13 @@ function RandomCuteAnimalMock() {
 }
 
 export default function Home() {
-    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+    const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
     return (
         <>
         {!isAuthenticated && (
         <div className="flex-column">
             {process.env.NODE_ENV !== 'development' ?
-            <RandomCuteAnimal cuteAnimal={dog}/>
+            <RandomCuteAnimal cuteAnimal={dog} user="anon"/>
             :
             <RandomCuteAnimalMock />
             }
@@ -37,7 +37,7 @@ export default function Home() {
         {isAuthenticated && (
         <div className="flex-column">
             {process.env.NODE_ENV !== 'development' ?
-            <RandomCuteAnimal cuteAnimal={cat}/>
+            <RandomCuteAnimal cuteAnimal={cat} user={user}/>
             :
             <RandomCuteAnimalMock />
             }

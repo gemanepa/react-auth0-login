@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../media/logo.png';
+import anonuser from '../../media/anonuser.png';
 import { useAuth0 } from "../../react-auth0-spa";
 import './index.css';
 
@@ -13,13 +14,15 @@ const NavBar = (props) => {
         <img src={logo} className="devlogo" title="gemanepa.com" alt=""/>
       </a>
       {!isAuthenticated && (
-        <button
-          onClick={() =>
-            loginWithRedirect({})
-          }
-        >
-          SIGNUP | LOGIN
-        </button>
+        <span>
+            <Link to="/">Home</Link>&nbsp;
+            <Link to="/profile">Profile</Link>
+            <div className="navcolumn">
+              <Link to="/profile"><img alt="user avatar" className="useravatar" src={anonuser} /></Link>
+              <button onClick={() => loginWithRedirect({})}>SIGNUP<br/>LOGIN</button>
+            </div>
+        </span>
+
       )}
 
         {/* NEW - add a link to the home and profile pages */}
@@ -27,10 +30,10 @@ const NavBar = (props) => {
         <span>
             <Link to="/">Home</Link>&nbsp;
             <Link to="/profile">Profile</Link>
-            <button onClick={() => logout()} className="navcolumn">
-              <img alt="user avatar" className="useravatar" src={user.picture} /> 
-              <p>LOGOUT</p>
-            </button>
+            <div className="navcolumn">
+              <Link to="/profile"><img alt="user avatar" className="useravatar" src={user.picture} /></Link>
+              <button onClick={() => logout()}>LOGOUT</button>
+            </div>
         </span>
         )}
     </nav>
