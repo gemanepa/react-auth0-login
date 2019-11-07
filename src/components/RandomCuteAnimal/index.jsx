@@ -14,6 +14,7 @@ export default function RandomCuteAnimal(props) {
 
     return (
         <section className="cuteanimal">
+            <h2>Hi Anonymous Person!</h2>
             <h3>You are {type === 'dog' ? 'not logged' : 'logged'}, so here you have randoms {type} pics from <a href={homepage}>{homepage}</a></h3>
             <img alt="" src={type === 'dog' ? data.message : data[0].url}/>
         </section>

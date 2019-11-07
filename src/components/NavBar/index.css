@@ -6,13 +6,22 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
+nav > a {
   width: auto;
   height: auto;
   animation: flipInX 1.5s forwards;
 }
 
-nav a img {
+nav span a {
+  margin-right: 1.5vw;
+  color: #FFFFFF;
+}
+
+nav span a:visited {
+  color: #FFFFFF;
+}
+
+nav a img.devlogo {
   width: 150px;
   height: auto;
   position: absolute;
@@ -37,13 +46,35 @@ nav span button {
   margin-left: 1.5vw;
 }
 
-nav span a {
-  margin-left: 1.5vw;
-  color: #FFFFFF;
+nav span img.useravatar {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
 }
 
-nav span a:visited {
-  color: #FFFFFF;
+nav span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav span .navcolumn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 13vw;
+  justify-content: space-between;
+  border: 0;
+  border-color: transparent;
+  outline: none;
+}
+
+nav span .navcolumn:focus, nav span .navcolumn:hover {
+  outline: none;
+}
+
+nav span .navcolumn img {
+  margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -54,16 +85,29 @@ nav span a:visited {
     width: 85px;
     position: relative;
   }
+
+  nav a img.devlogo {
+    width: 85px;
+    height: auto;
+  }
+
+  nav span {
+    margin-right: 30%;
+  }
+
+  nav span img.useravatar {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   nav {
-    height: 3.5vh;
+    height: 7vh;
   }
-  nav a {
+  nav > a {
     position: fixed;
   }
-  nav button {
+  nav > button, nav > span {
     position: fixed;
     right: 1%;
   }

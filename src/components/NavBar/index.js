@@ -5,12 +5,12 @@ import { useAuth0 } from "../../react-auth0-spa";
 import './index.css';
 
 const NavBar = (props) => {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
 
   return (
     <nav>
       <a href="https://gemanepa.com">
-        <img src={logo} title="gemanepa.com" alt=""/>
+        <img src={logo} className="devlogo" title="gemanepa.com" alt=""/>
       </a>
       {!isAuthenticated && (
         <button
@@ -27,7 +27,10 @@ const NavBar = (props) => {
         <span>
             <Link to="/">Home</Link>&nbsp;
             <Link to="/profile">Profile</Link>
-            <button onClick={() => logout()}>LOGOUT</button>
+            <button onClick={() => logout()} className="navcolumn">
+              <img alt="user avatar" className="useravatar" src={user.picture} /> 
+              <p>LOGOUT</p>
+            </button>
         </span>
         )}
     </nav>
