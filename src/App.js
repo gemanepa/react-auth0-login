@@ -6,7 +6,11 @@ import Profile from "./components/Profile";
 import PrivateRoute from "./components/PrivateRoute";
 import NavBar from "./components/NavBar";
 import Loader from './components/Loader';
+import auth0logo from './media/auth0.jpg';
+import swrlogo from './media/swr.jpg';
+import hookslogo from './media/hooks.jpg';
 import './App.css';
+
 
 function App() {
   const { isAuthenticated, loginWithRedirect, logout, loading } = useAuth0();
@@ -23,14 +27,15 @@ function App() {
         <NavBar auth0={{isAuthenticated, loginWithRedirect, logout}}/>
         <header>
           <h1>Login Template</h1>
-          <h2>
-            <span>Using </span> 
-            <span><a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a></span>
-            <span> + </span> 
-            <span><a href="https://swr.now.sh">SWR</a></span> 
-            <span> + </span> 
-            <span><a href="https://auth0.com">Auth0</a></span>
-          </h2>
+          <a href="https://reactjs.org/docs/hooks-intro.html" title="React Hooks">
+            <img alt="React Hooks" src={hookslogo} />
+          </a>
+          <a href="https://swr.now.sh" title="SWR">
+            <img alt="SWR" src={swrlogo} />
+          </a>
+          <a href="https://auth0.com" title="Auth0">
+            <img alt="Auth0" src={auth0logo} />
+          </a>
         </header>
 
         <Switch>
