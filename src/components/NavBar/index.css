@@ -6,13 +6,24 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
+nav > a {
   width: auto;
   height: auto;
   animation: flipInX 1.5s forwards;
 }
 
-nav a img {
+nav span > a {
+  margin-right: 1.5vw;
+  color: #FFFFFF;
+  text-shadow: 1px 1px black;
+}
+
+nav span a:visited {
+  color: #FFFFFF;
+  text-shadow: 1px 1px black;
+}
+
+nav a img.devlogo {
   width: 150px;
   height: auto;
   position: absolute;
@@ -24,6 +35,7 @@ nav button {
   background-color: transparent;
   border: 0px;
   color: white;
+  text-shadow: 1px 1px black;
   font-weight: 600;
   font-size: 120%;
   cursor: pointer
@@ -33,39 +45,72 @@ nav button:hover {
   color: darkblue;
 }
 
-nav span button {
-  margin-left: 1.5vw;
+
+nav span img.useravatar {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
 }
 
-nav span a {
-  margin-left: 1.5vw;
-  color: #FFFFFF;
+nav span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-nav span a:visited {
-  color: #FFFFFF;
+nav span .navcolumn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 11vw;
+  justify-content: space-between;
+  border: 0;
+  border-color: transparent;
+  outline: none;
+}
+
+nav span .navcolumn img {
+  margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
   nav {
     width: 98%;
+    margin-bottom: 20px;
   }
   nav a img {
     width: 85px;
     position: relative;
   }
+
+  nav a img.devlogo {
+    width: 85px;
+    height: auto;
+  }
+
+  nav span {
+    margin-right: 30%;
+  }
+
+  nav span img.useravatar {
+    margin-right: 3px;
+    margin-left: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   nav {
-    height: 3.5vh;
+    height: 7vh;
   }
-  nav a {
+  nav > a {
     position: fixed;
   }
-  nav button {
+  nav > button, nav > span {
     position: fixed;
     right: 1%;
+  }
+  nav span .navcolumn {
+    margin-left: 62vw;
   }
 }
 

@@ -1,21 +1,38 @@
 
 .profile-pic {
     border-radius: 5%;
-    max-width: 325px;
     height: auto;
 }
 .profile-data {
     text-align: left;
-    margin-left: 30%;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-weight: 600;
 }
 
-.profile-data h4 span {
-    font-weight: 300;
+.profile-section {
+    margin-top: 5vh;
+}
+
+.profile-section h2 {
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 @media screen and (max-width: 1200px) {
     .profile-data {
         text-align: left;
         margin-left: 5%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .profile-section {
+        padding-left: 50%;
+    }
+    .profile-data {
+        padding-left: 25%;
+    }
+    .profile-pic {
+        max-width: 10vw;
     }
   }
