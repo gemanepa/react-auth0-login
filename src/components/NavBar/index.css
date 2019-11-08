@@ -62,7 +62,6 @@ nav span .navcolumn {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width: 11vw;
   justify-content: space-between;
   border: 0;
   border-color: transparent;
