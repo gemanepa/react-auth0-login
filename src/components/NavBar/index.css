@@ -85,10 +85,8 @@ nav span .navcolumn img {
   nav a img.devlogo {
     width: 60px;
     height: auto;
-  }
-
-  nav span {
-    margin-right: 30%;
+    position: relative;
+    margin-right: 5%;
   }
 
   nav span img.useravatar {
