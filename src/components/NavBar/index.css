@@ -62,7 +62,6 @@ nav span .navcolumn {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width: 11vw;
   justify-content: space-between;
   border: 0;
   border-color: transparent;
@@ -84,12 +83,10 @@ nav span .navcolumn img {
   }
 
   nav a img.devlogo {
-    width: 85px;
+    width: 60px;
     height: auto;
-  }
-
-  nav span {
-    margin-right: 30%;
+    position: relative;
+    margin-right: 5%;
   }
 
   nav span img.useravatar {
