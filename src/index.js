@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "./react-auth0-spa";
-import bts from './utils/bts'
 
 // A function that routes the user to the right place
 // after login
@@ -24,7 +23,7 @@ ReactDOM.render(
     redirect_uri={window.location.origin}
     onRedirectCallback={onRedirectCallback}
 >
-   {bts(process.env.REACT_APP_BIN) === process.env.REACT_APP_DEV && <App />}
+   <App />
   </Auth0Provider>,
   document.getElementById("gemanepa")
 );
