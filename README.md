@@ -7,6 +7,7 @@ Users can sign up and log in with the following social accounts: Google, Faceboo
 
 Live Version hosted in [Firebase](https://firebase.google.com/): https://react-auth0-login.web.app
 
+For a mini-version of react+auth0 check https://github.com/gemanepa/mini-react-auth0
 
 ## Config
 You need to set REACT_APP_AUTH0_DOMAIN and REACT_APP_AUTH0_CLIENTID environment variables obtained from your Auth0 project
